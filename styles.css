@@ -1,0 +1,124 @@
+/*
+C'est juste un CSS reset car je n'aime pas les styles de bases.
+*/
+@import url("https://cdn.jsdelivr.net/npm/tailwindcss-preflight@1.0.1/preflight.min.css");
+
+* {
+  font-family: "Comic Relief", sans-serif;
+  /* Disponible depuis 2022: https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis */
+  font-synthesis: style;
+}
+
+header {
+  background: linear-gradient(-45deg, #0000, #04fa9b);
+  padding: 0.5em;
+  vertical-align: middle;
+  font-size: 2em;
+
+  h1 {
+    margin-block: 0;
+    line-height: 1em;
+
+    &::before {
+      content: "owo";
+      font-family: "BBH Sans Bartle", sans-serif;
+    }
+  }
+}
+
+header::before {
+  /* our logo */
+  content: "";
+  background: url("https://placecats.com/bella/32/32");
+  height: 1em;
+  margin-right: 1em;
+  aspect-ratio: 1;
+  float: left;
+}
+
+/* Source: moi @ https://uiverse.io/SelfMadeSystem/ancient-donkey-33 */
+.nav {
+  /* Path length: 1120, half 560 */
+  --default: 0 460 80 480 80 480;
+  .outline {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .rect {
+    stroke-dashoffset: 0.1;
+    stroke-dasharray: var(--default);
+    stroke-linecap: round;
+    transition: 0.5s;
+    stroke: #fff;
+  }
+
+  margin: auto;
+  margin-top: 2em;
+  position: relative;
+  width: 500px;
+  height: 60px;
+
+  .container:hover .outline .rect {
+    transition: 999999s;
+    /* Must specify these values here as something *different* just so that the transition works properly */
+    stroke-dashoffset: 1;
+    stroke-dasharray: 0.1;
+  }
+
+  .container {
+    position: absolute;
+    inset: 0;
+    background: rgb(134, 155, 162);
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    padding: 0.25em;
+  }
+
+  .btn {
+    /* flex the goat */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+
+  .btn:hover {
+    background: #fff3;
+  }
+
+  /* total width: 492 */
+  /* width of btn: 98.4 */
+  .btn:nth-child(1):hover ~ svg .rect {
+    stroke-dashoffset: 0.1;
+    stroke-dasharray: 0 8 90 864 90 69;
+  }
+
+  .btn:nth-child(2):hover ~ svg .rect {
+    stroke-dashoffset: 0.1;
+    stroke-dasharray: 0 106.4 90 667.2 90 167;
+  }
+
+  .btn:nth-child(3):hover ~ svg .rect {
+    stroke-dashoffset: 0.1;
+    stroke-dasharray: 0 204.6 90 470.4 90 265.2;
+  }
+
+  .btn:nth-child(4):hover ~ svg .rect {
+    stroke-dashoffset: 0.1;
+    stroke-dasharray: 0 303 90 273.6 90 364;
+  }
+
+  .btn:nth-child(5):hover ~ svg .rect {
+    stroke-dashoffset: 0.1;
+    stroke-dasharray: 0 401.4 90 76.8 90 462;
+  }
+
+  .btn:hover ~ .outline .rect {
+    stroke-dasharray: var(--default);
+    transition: 0.5s !important;
+  }
+}
