@@ -9,6 +9,12 @@ C'est juste un CSS reset car je n'aime pas les styles de bases.
   font-synthesis: style;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   background: linear-gradient(-45deg, #0000, #04fa9b);
   padding: 0.5em;
@@ -36,8 +42,26 @@ header::before {
   float: left;
 }
 
+footer {
+  background: linear-gradient(45deg, #0000, #04fa9b);
+  padding: 0.5em;
+  text-align: center;
+  margin-top: auto;
+}
+
+.unreadable {
+  font-family: "Redacted Script", cursive;
+}
+
 /* Source: moi @ https://uiverse.io/SelfMadeSystem/ancient-donkey-33 */
 .nav {
+  position: sticky;
+  top: 0;
+  margin: auto;
+  margin-top: 2em;
+  width: 500px;
+  height: 60px;
+
   /* Path length: 1120, half 560 */
   --default: 0 460 80 480 80 480;
   .outline {
@@ -53,12 +77,6 @@ header::before {
     transition: 0.5s;
     stroke: #fff;
   }
-
-  margin: auto;
-  margin-top: 2em;
-  position: relative;
-  width: 500px;
-  height: 60px;
 
   .container:hover .outline .rect {
     transition: 999999s;
