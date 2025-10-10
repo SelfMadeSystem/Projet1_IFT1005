@@ -12,6 +12,7 @@ C'est juste un CSS reset car je n'aime pas les styles de bases.
 
 :root {
   --text: #460303;
+  --text-2: #800000;
   --link: #a40000;
   --contrast: #bd0000;
   --surface: #f0e8e8;
@@ -84,6 +85,7 @@ main {
 }
 
 h2 {
+  color: var(--text-2);
   font-size: 1.5em;
 }
 
