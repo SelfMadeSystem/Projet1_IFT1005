@@ -46,6 +46,7 @@ h6 {
 }
 
 header {
+  background: #fff;
   border-bottom: var(--contrast) 5px solid;
   padding: 0.5em;
   vertical-align: middle;
@@ -108,6 +109,14 @@ p a, ul a {
 ul {
   padding-left: 1.5em;
   list-style: disc;
+}
+
+.bg-fanciness {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 
 .unreadable {
