@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REM 2.0</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Copiée de https://fonts.google.com/selection/embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redacted+Script:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Un header contenant une titre de niveau 1 et une image servant de logo, insérée avec une règle float. -->
+    <header>
+      <!-- Logo de https://rem.info/, mais avec des couleurs changés -->
+      <svg
+        class="img"
+        width="105"
+        height="66"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 25.43 15.7"
+      >
+        <polygon
+          fill="#bd0000"
+          points="25.43 9.94 16.64 9.94 16.64 9.94 17.98 12.25 25.43 12.25 25.43 9.94"
+        ></polygon>
+        <polygon
+          fill="#bd0000"
+          points="12.82 9.94 0 9.94 0 12.25 14.14 12.25 12.82 9.94"
+        ></polygon>
+        <rect
+          fill="#460303"
+          x="7.2"
+          y="12.25"
+          width="3.59"
+          height="3.46"
+        ></rect>
+        <path
+          fill="#460303"
+          d="M16.64,9.94a5.18,5.18,0,0,0,2.89-4.55A5.37,5.37,0,0,0,14.15,0H7.2V9.94h5.61l3.31,5.77H20L16.64,9.94h0M14.15,7.4H10.79v-4h3.35a1.9,1.9,0,0,1,1.8,2A1.9,1.9,0,0,1,14.15,7.4Z"
+        ></path>
+      </svg>
+      <h1><span class="rba">REM</span> 2.0</h1>
+    </header>
+    <!-- Un menu de navigation permettant à l’utilisateur de se déplacer entre les différentes pages de
+    votre site Web. La couleur de fond d’un lien du menu de navigation doit changer (de manière
+    visible) lorsque le lien est survolé. -->
+    <nav class="nav">
+      <div class="container">
+        <a href="index.html" class="btn">Accueil</a>
+        <a href="a_propos.html" class="btn">À propos</a>
+        <a href="contact.html" class="btn">Contact</a>
+        <a href="nouvelles.html" class="btn">Nouvelles</a>
+        <a href="horaire.html" class="btn">Horaire</a>
+        <svg
+          class="outline"
+          overflow="visible"
+          width="500"
+          height="60"
+          viewBox="0 0 500 60"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            class="rect"
+            x="0"
+            y="0"
+            width="500"
+            height="60"
+            fill="transparent"
+            stroke-width="5"
+          ></rect>
+        </svg>
+      </div>
+    </nav>
+    <main>
+      <h2>À propos</h2>
+      <h3>Accessibilité du site web</h3>
+      <p>
+        Le site Web du Réseau Express Métropolitain (REM) 2.0 souhaite se
+        conformer aux
+        <a href="https://www.w3.org/Translations/WCAG20-fr/"
+          >Règles pour l'accessibilité des contenus Web</a
+        >
+        niveau AA (WCAG 2.0 AA).
+      </p>
+      <h3>Sources</h3>
+      <ul>
+        <li>
+          Logo du REM : <a href="https://rem.info/">rem.info</a>
+        </li>
+        <li>
+          CSS Reset :
+          <a href="https://tailwindcss.com/docs/preflight"
+            >TailwindCSS v4.1 Preflight</a
+          >
+        </li>
+        <li>
+          Polices de caractères :
+          <a href="https://fonts.google.com/specimen/Inter">Inter</a>,
+          <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a
+          >, <a href="https://fonts.google.com/specimen/Redacted+Script"
+            >Redacted Script</a
+          >, <a href="https://fonts2u.com/richardson-brand-accelerator.font"
+            >Richardson Brand Accelerator</a>
+        </li>
+        <li>
+          Menu de navigation animé :
+          <a href="https://uiverse.io/SelfMadeSystem/ancient-donkey-33"
+            >uiverse.io (fait par Shoghi Simon :)</a
+          >
+        </li>
+      </ul>
+    </main>
+    <!-- Un footer contenant vos noms et prénoms en gras (vos noms et prénoms doivent être les
+seuls mots en gras dans le footer) et la date de la dernière de mise à jour de votre site. -->
+    <footer>
+      <p>
+        <strong>Shoghi Simon</strong>
+        <span class="unreadable">ACME Corp.</span> &copy; 9 octobre 2025
+      </p>
+    </footer>
+  </body>
+</html>

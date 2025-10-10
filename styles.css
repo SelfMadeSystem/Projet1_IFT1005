@@ -12,6 +12,7 @@ C'est juste un CSS reset car je n'aime pas les styles de bases.
 
 :root {
   --text: #460303;
+  --link: #a40000;
   --contrast: #bd0000;
   --surface: #f0e8e8;
 }
@@ -84,6 +85,27 @@ main {
 
 h2 {
   font-size: 1.5em;
+}
+
+p a, ul a {
+  color: var(--link);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  &[href^="http"]::after {
+    content: "↗";
+    font-size: 0.8em;
+    vertical-align: super;
+  }
+}
+
+ul {
+  padding-left: 1.5em;
+  list-style: disc;
 }
 
 .unreadable {
