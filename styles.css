@@ -3,8 +3,21 @@ C'est juste un CSS reset car je n'aime pas les styles de bases.
 */
 @import url("https://cdn.jsdelivr.net/npm/tailwindcss-preflight@1.0.1/preflight.min.css");
 
+@font-face {
+  font-family: "Richardson Brand Accelerator";
+  src: url("RichardsonBrandAccelerator.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --text: #460303;
+  --contrast: #bd0000;
+  --surface: #f0e8e8;
+}
+
 * {
-  font-family: "Comic Relief", sans-serif;
+  font-family: "Inter", sans-serif;
   /* Disponible depuis 2022: https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis */
   font-synthesis: style;
 }
@@ -15,38 +28,62 @@ body {
   flex-direction: column;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.rba {
+  font-family: "Richardson Brand Accelerator", sans-serif;
+  letter-spacing: -0.1em;
+}
+
 header {
-  background: linear-gradient(-45deg, #0000, #04fa9b);
+  border-bottom: var(--contrast) 5px solid;
   padding: 0.5em;
   vertical-align: middle;
   font-size: 2em;
 
   h1 {
+    color: var(--text);
     margin-block: 0;
     line-height: 1em;
+  }
 
-    &::before {
-      content: "owo";
-      font-family: "BBH Sans Bartle", sans-serif;
-    }
+  .img {
+    /* our logo */
+    height: 1em;
+    margin-right: 1em;
+    aspect-ratio: 1;
+    float: left;
   }
 }
 
-header::before {
-  /* our logo */
-  content: "";
-  background: url("https://placecats.com/bella/32/32");
-  height: 1em;
-  margin-right: 1em;
-  aspect-ratio: 1;
-  float: left;
-}
-
 footer {
-  background: linear-gradient(45deg, #0000, #04fa9b);
+  background: var(--text);
+  color: var(--surface);
   padding: 0.5em;
   text-align: center;
   margin-top: auto;
+}
+
+main {
+  padding: 1em;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 600px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.5em;
 }
 
 .unreadable {
@@ -75,7 +112,7 @@ footer {
     stroke-dasharray: var(--default);
     stroke-linecap: round;
     transition: 0.5s;
-    stroke: #fff;
+    stroke: var(--contrast);
   }
 
   .container:hover .outline .rect {
@@ -88,7 +125,8 @@ footer {
   .container {
     position: absolute;
     inset: 0;
-    background: rgb(134, 155, 162);
+    background: var(--surface);
+    color: var(--text);
     display: grid;
     grid-template-columns: repeat(5, 20%);
     padding: 0.25em;
@@ -99,7 +137,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     cursor: pointer;
     transition: 0.1s;
   }
