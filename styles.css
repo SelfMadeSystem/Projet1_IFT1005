@@ -16,6 +16,7 @@ C'est juste un CSS reset car je n'aime pas les styles de bases.
   --link: #a40000;
   --contrast: #bd0000;
   --surface: #f0e8e8;
+  --surface-darker: #e1d1d1;
 }
 
 * {
@@ -51,6 +52,11 @@ header {
   padding: 0.5em;
   vertical-align: middle;
   font-size: 2em;
+  height: 65px;
+
+  @media (min-width: 1080px) {
+    margin: 0 120px;
+  }
 
   h1 {
     color: var(--text);
@@ -90,7 +96,8 @@ h2 {
   font-size: 1.5em;
 }
 
-p a, ul a {
+p a,
+ul a {
   color: var(--link);
   text-decoration: none;
 
@@ -125,12 +132,23 @@ ul {
 
 /* Source: moi @ https://uiverse.io/SelfMadeSystem/ancient-donkey-33 */
 .nav {
-  position: sticky;
+  display: inline-block;
+  position: fixed;
   top: 0;
+  right: 0;
+
+  @media (min-width: 1080px) {
+    right: 122.5px;
+  }
+
   margin: auto;
-  margin-top: 2em;
   width: 500px;
   height: 60px;
+  font-size: 1rem;
+
+  @media (max-width: 850px) {
+    position: sticky;
+  }
 
   /* Path length: 1120, half 560 */
   --default: 0 460 80 480 80 480;
@@ -146,6 +164,8 @@ ul {
     stroke-linecap: round;
     transition: 0.5s;
     stroke: var(--contrast);
+    transform-origin: center;
+    transform: scaleY(-1);
   }
 
   .container:hover .outline .rect {
@@ -158,11 +178,22 @@ ul {
   .container {
     position: absolute;
     inset: 0;
-    background: var(--surface);
     color: var(--text);
     display: grid;
     grid-template-columns: repeat(5, 20%);
     padding: 0.25em;
+    backdrop-filter: blur(5px);
+    border-radius: 0px 0px 10px 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--surface-darker);
+      opacity: 0.5;
+      z-index: -1;
+      border-radius: inherit;
+    }
   }
 
   .btn {
