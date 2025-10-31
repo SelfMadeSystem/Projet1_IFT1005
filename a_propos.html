@@ -1,74 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anciens invertébrés marins</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Copiée de https://fonts.google.com/selection/embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redacted+Script:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anciens invertébrés marins</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Copiée de https://fonts.google.com/selection/embed -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redacted+Script:wght@300;400;700&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <!-- Un header contenant une titre de niveau 1 -->
-  <header>
-    <img class="logo" src="logo.webp" alt="logo">
-    <h1>Anciens invertébrés marins</h1>
-  </header>
-  <!-- Un menu de navigation permettant à l’utilisateur de se déplacer entre les différentes pages de
+  <body>
+    <!-- Un header contenant une titre de niveau 1 -->
+    <header>
+      <img class="logo" src="logo.webp" alt="logo" />
+      <h1>Anciens invertébrés marins</h1>
+    </header>
+    <!-- Un menu de navigation permettant à l’utilisateur de se déplacer entre les différentes pages de
     votre site Web. La couleur de fond d’un lien du menu de navigation doit changer (de manière
     visible) lorsque le lien est survolé. -->
-  <nav class="nav">
-    <div class="container">
-      <a href="index.html" class="btn">Accueil</a>
-      <a href="a_propos.html" class="btn">À propos</a>
-      <a href="trilobites.html" class="btn">Trilobites</a>
-      <a href="orthoceras.html" class="btn">Orthoceras</a>
-      <a href="ammonites.html" class="btn">Ammonites</a>
-      <svg class="outline" overflow="visible" width="500" height="60" viewBox="0 0 500 60"
-        xmlns="http://www.w3.org/2000/svg">
-        <rect class="rect" x="0" y="0" width="500" height="60" fill="transparent" stroke-width="5"></rect>
-      </svg>
-    </div>
-  </nav>
-  <main>
-    <h2>À propos</h2>
-    <h3>Accessibilité du site web</h3>
-    <p>
-      Ce site Web souhaite se conformer aux
-      <a href="https://www.w3.org/Translations/WCAG20-fr/">Règles pour l'accessibilité des contenus Web</a>
-      niveau AA (WCAG 2.0 AA).
-    </p>
-    <h3>Sources</h3>
-    <ul>
-      <li>
-        Texte pour l'accessibilité adapté</a>
-      </li>
-      <li>
-        Logo d'Ammonites fait avec <a href="https://www.inkscape.org/">Inkscape</a>
-      </li>
-      <li>
-        CSS Reset :
-        <a href="https://tailwindcss.com/docs/preflight">TailwindCSS v4.1 Preflight</a>
-      </li>
-      <li>
-        Polices de caractères :
-        <a href="https://fonts.google.com/specimen/Inter">Inter</a>,
-        <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a>, <a
-          href="https://fonts.google.com/specimen/Redacted+Script">Redacted Script</a>
-      </li>
-      <li>
-        Menu de navigation animé :
-        <a href="https://uiverse.io/SelfMadeSystem/ancient-donkey-33">uiverse.io (fait par Shoghi Simon)</a>
-      </li>
-    </ul>
+    <nav class="nav">
+      <div class="container">
+        <a href="index.html" class="btn">Accueil</a>
+        <a href="a_propos.html" class="btn">À propos</a>
+        <a href="trilobites.html" class="btn">Trilobites</a>
+        <a href="orthoceras.html" class="btn">Orthoceras</a>
+        <a href="ammonites.html" class="btn">Ammonites</a>
+        <svg
+          class="outline"
+          overflow="visible"
+          width="500"
+          height="60"
+          viewBox="0 0 500 60"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            class="rect"
+            x="0"
+            y="0"
+            width="500"
+            height="60"
+            fill="transparent"
+            stroke-width="5"
+          ></rect>
+        </svg>
+      </div>
+    </nav>
+    <main>
+      <h2>À propos</h2>
+      <h3>Accessibilité du site web</h3>
+      <p>
+        Ce site Web souhaite se conformer aux
+        <a href="https://www.w3.org/Translations/WCAG20-fr/"
+          >Règles pour l'accessibilité des contenus Web</a
+        >
+        niveau AA (WCAG 2.0 AA).
+      </p>
+      <h3>Sources</h3>
+      <ul>
+        <li>Texte pour l'accessibilité adapté</li>
+        <li>
+          Logo d'Ammonites fait avec
+          <a href="https://www.inkscape.org/">Inkscape</a>
+        </li>
+        <li>
+          CSS Reset :
+          <a href="https://tailwindcss.com/docs/preflight"
+            >TailwindCSS v4.1 Preflight</a
+          >
+        </li>
+        <li>
+          Polices de caractères :
+          <a href="https://fonts.google.com/specimen/Inter">Inter</a>,
+          <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a>,
+          <a href="https://fonts.google.com/specimen/Redacted+Script"
+            >Redacted Script</a
+          >
+        </li>
+        <li>
+          Menu de navigation animé :
+          <a href="https://uiverse.io/SelfMadeSystem/ancient-donkey-33"
+            >uiverse.io (fait par Shoghi Simon)</a
+          >
+        </li>
+      </ul>
     </main>
-    
+
     <div class="cercle">
       <span>SX</span>
     </div>
@@ -77,10 +98,9 @@
     seuls mots en gras dans le footer) et la date de la dernière de mise à jour de votre site. -->
     <footer>
       <p>
-      <strong>Shoghi Simon</strong>
-      <span class="unreadable">ACME Corp.</span> &copy; 10 octobre 2025
-    </p>
-  </footer>
-</body>
-
+        <strong>Shoghi Simon</strong>
+        <span class="unreadable">ACME Corp.</span> &copy; 10 octobre 2025
+      </p>
+    </footer>
+  </body>
 </html>
