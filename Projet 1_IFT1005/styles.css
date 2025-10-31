@@ -302,5 +302,9 @@ footer {
 .cercle:hover {
   transform: scale(1.1);
   background-color: rgba(120, 15, 15, 0.4);
-  cursor:pointer;
-}     
+  cursor: pointer;
+}
+
+ol {
+  list-style-type: decimal;
+}
