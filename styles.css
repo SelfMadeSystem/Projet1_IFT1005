@@ -305,16 +305,16 @@ footer {
 }
 
 .cercle {
+  min-height: 0;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   box-sizing: border-box;
   background-color: rgba(146, 20, 20, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 20px;
-  color: #000
+  color: #000;
+  text-align: center;
+  line-height: 50px;
 }
 
 .cercle:hover {
