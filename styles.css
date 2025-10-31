@@ -88,6 +88,7 @@ h2 {
 }
 
 p a,
+figcaption a,
 ul a {
   color: var(--link);
   text-decoration: none;
