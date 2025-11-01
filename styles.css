@@ -22,8 +22,6 @@ C'est juste un CSS reset car je n'aime pas les styles de bases.
 
 body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   text-align: justify;
 }
 
@@ -41,10 +39,12 @@ header {
     margin: 0 120px;
   }
 
+  /* enlevé flex et ajouté padding pour centrer*/
   h1 {
     color: var(--text);
     margin-block: 0;
     vertical-align: center;
+    padding-top: 0.15em;
   }
 }
 
@@ -63,28 +63,35 @@ div {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: brown;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+p {
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+
 }
 
 main {
   padding: 6em;
   color: var(--text);
-  display: flex;
-  flex-direction: column;
   gap: 1em;
   max-width: auto;
   margin: auto;
-}
-
-h2 {
-  color: var(--text-2);
-  font-size: 1.5em;
 }
 
 p a,
@@ -107,15 +114,19 @@ ul a {
 
 ul {
   padding-left: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   list-style: disc;
 }
 
 ol {
   padding-left: 1.5em;
+  padding-top: 0.5em;
   list-style-type: decimal;
 
   ol {
     list-style-type: lower-alpha;
+    padding-bottom: 0.75em;
 
     ol {
       list-style-type: lower-roman;
@@ -134,10 +145,6 @@ img {
   padding: 0px;
 }
 
-figcaption {
-  text-align: center
-}
-
 footer {
   background: var(--text);
   color: var(--surface);
@@ -146,18 +153,15 @@ footer {
   margin-top: auto;
 }
 
-.main {
-  display: flex
-}
-
 .h2 {
   text-align: center;
 }
 
+/* enlevé flex */
 .conteneur-image {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  padding-bottom: 1.2em;
+  margin-left: 250px;
 
 }
 
@@ -245,12 +249,12 @@ footer {
   }
 
   .btn {
-    /* flex the goat */
-    display: flex;
+    /* enlevé flex et ajouté padding pour centrer verticalement*/
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: 0.1s;
+    padding-top: 0.8em;
   }
 
   .btn:hover {
@@ -301,9 +305,6 @@ footer {
   cursor: pointer;
 }
 
-.signet-navigation {
-  margin: auto;
-}
 
 .cercle {
   min-height: 0;
@@ -311,15 +312,15 @@ footer {
   height: 50px;
   border-radius: 50%;
   box-sizing: border-box;
-  background-color: rgba(146, 20, 20, 0.2);
+  background-color: #c89e60ff;
   font-size: 20px;
   color: #000;
   text-align: center;
   line-height: 50px;
+  background-image: linear-gradient(to bottom, #c89e60ff, #da0f0f);
 }
 
 .cercle:hover {
   transform: scale(1.1);
-  background-color: rgba(120, 15, 15, 0.4);
-  cursor: pointer;
+  background: rgba(146, 20, 20, 0.2);
 }

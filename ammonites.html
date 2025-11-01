@@ -1,226 +1,197 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anciens invertébrés marins</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Copiée de https://fonts.google.com/selection/embed -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redacted+Script:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body id="haut">
-    <!-- Un header contenant une titre de niveau 1 -->
-    <header>
-      <img class="logo" src="logo.webp" alt="logo" />
-      <h1>Anciens invertébrés marins</h1>
-    </header>
-    <!-- Un menu de navigation permettant à l’utilisateur de se déplacer entre les différentes pages de
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anciens invertébrés marins</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Copiée de https://fonts.google.com/selection/embed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redacted+Script:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body id="haut">
+  <!-- Un header contenant une titre de niveau 1 -->
+  <header>
+    <img class="logo" src="logo.webp" alt="logo" />
+    <h1>Anciens invertébrés marins</h1>
+  </header>
+  <!-- Un menu de navigation permettant à l’utilisateur de se déplacer entre les différentes pages de
     votre site Web. La couleur de fond d’un lien du menu de navigation doit changer (de manière
     visible) lorsque le lien est survolé. -->
-    <nav class="nav">
-      <div class="container">
-        <a href="index.html" class="btn">Accueil</a>
-        <a href="a_propos.html" class="btn">À propos</a>
-        <a href="trilobites.html" class="btn">Trilobites</a>
-        <a href="orthoceras.html" class="btn">Orthoceras</a>
-        <a href="ammonites.html" class="btn">Ammonites</a>
-        <svg
-          class="outline"
-          overflow="visible"
-          width="500"
-          height="60"
-          viewBox="0 0 500 60"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            class="rect"
-            x="0"
-            y="0"
-            width="500"
-            height="60"
-            fill="transparent"
-            stroke-width="5"
-          ></rect>
-        </svg>
-      </div>
-    </nav>
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="btn">Accueil</a>
+      <a href="a_propos.html" class="btn">À propos</a>
+      <a href="trilobites.html" class="btn">Trilobites</a>
+      <a href="orthoceras.html" class="btn">Orthoceras</a>
+      <a href="ammonites.html" class="btn">Ammonites</a>
+      <svg class="outline" overflow="visible" width="500" height="60" viewBox="0 0 500 60"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect class="rect" x="0" y="0" width="500" height="60" fill="transparent" stroke-width="5"></rect>
+      </svg>
+    </div>
+  </nav>
 
+  <main>
+    <!--Un signet en haut pour se déplacer-->
     <div class="signet-navigation">
       <a href="#fin" class="btn1">Fin de la page</a>
     </div>
 
-    <main>
-      <div class="h2">
-        <h2>Ammonites</h2>
-      </div>
+    <div class="h2">
+      <h2>Ammonites</h2>
+    </div>
 
-      <div class="conteneur-image">
-        <figure>
-          <img
-            style="border-radius: 999px"
-            src="ammonites.webp"
-            alt="Fossils d'ammonites"
-          />
-          <figcaption>
-            Fossils d'ammonites. Source:
-            <a
-              href="https://pixabay.com/fr/photos/ammonites-fossiles-coquilles-5528191/"
-              >Pixabay (geralt)</a
-            >
-          </figcaption>
-        </figure>
-      </div>
-      <div class="p">
-        <p>
-          Les ammonites sont des mollusques céphalopodes éteints ayant existé
-          durant le Dévonien au Crétacé il y a environ 400 à 65 millions
-          d’années.
-        </p>
-        <p>
-          Le nom ammonite provient de la forme spirale de leurs coquilles qui
-          évoque les cornes de bélier du dieu Égyptien Amon.
-        </p>
-      </div>
-      <h3>
-        <svg
-          class="icon"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 11 10"
-          width="24"
-        >
-          <path
-            fill="#c89e60ff"
-            d="M6.115 0 5.994.002 5.869.006 5.658.023 5.445.053 5.234.09 5.027.139 4.824.197 4.625.264 4.43.342 4.24.426 4.055.521 3.873.623 3.697.734 3.529.854l-.164.125-.158.133-.15.141-.031.031.689.676.016-.016.117-.109.123-.104.129-.1.133-.092.137-.088.143-.08.145-.074.148-.066.152-.061.156-.053.158-.045.16-.037.162-.029.166-.021.17-.014.092-.004.096-.002.096.002.094.002.094.008.092.008.092.012.092.014.092.016.059.012L7.018.092 6.945.076 6.83.057 6.713.039 6.596.025 6.477.014 6.357.006 6.236.002Zm1.428.232-.313.914.064.021.086.031.084.035.084.035.082.037.082.041.08.041.08.045.078.045.074.047.154.102.145.109.141.115.137.121.129.129.125.135.117.141L9.084 2.521 9.188 2.674 9.285 2.83 9.375 2.99 9.457 3.154 9.533 3.324 9.596 3.486 10.494 3.137 10.424 2.955 10.33 2.744 10.229 2.537 10.115 2.338 9.994 2.143 9.865 1.955 9.727 1.773 9.58 1.6 9.426 1.432 9.264 1.271 9.094 1.119 8.918.975 8.734.84 8.549.713 8.449.652 8.35.594 8.25.539 8.148.486 8.045.436 7.941.387 7.836.342 7.729.299 7.619.26ZM2.674 1.678 2.645 1.715 2.523 1.881 2.408 2.053 2.303 2.23 2.205 2.414 2.117 2.604 2.039 2.797 1.969 2.994 1.91 3.197 1.863 3.4 1.842 3.508 1.824 3.613 1.809 3.719 1.797 3.826l-.01.107-.006.109-.002.107-.002.109.004.111.006.113.016.189.027.191.035.188.045.184.055.182.061.178.07.176.023.049L2.996 5.418 2.982 5.389 2.93 5.258 2.883 5.123 2.844 4.986 2.809 4.848 2.783 4.707 2.762 4.564 2.75 4.416 2.744 4.336 2.742 4.252 2.744 4.168 2.746 4.086 2.75 4.002 2.758 3.922 2.768 3.84 2.777 3.76 2.791 3.68 2.807 3.604 2.844 3.443 2.889 3.289 2.941 3.139 3.002 2.99 3.07 2.846 3.145 2.703 3.227 2.566 3.314 2.434 3.408 2.305 3.424 2.285ZM6.125 1.777l-.152.004-.154.012-.123.018-.123.023-.121.029-.119.033-.115.041-.033.012.355.898.012-.006.072-.023.074-.021.076-.02.076-.014.076-.01.1-.01.098-.002.098.002.096.01.094.012.094.02.092.023.09.027.088.033.088.037.084.041.084.047.08.051.078.053.076.059.074.063.07.066.068.068.064.072.063.076.059.078.055.082.051.084.047.086.043.09.039.09.033.094.02.059L8.869 3.869 8.842 3.789 8.791 3.652 8.734 3.521 8.672 3.393 8.604 3.266 8.529 3.145 8.451 3.025 8.365 2.91 8.275 2.801 8.182 2.693 8.082 2.594 7.979 2.496 7.869 2.404 7.756 2.318 7.639 2.236 7.518 2.162 7.393 2.092 7.264 2.029 7.131 1.973 6.996 1.922 6.857 1.879 6.715 1.844 6.57 1.814 6.424 1.793 6.275 1.781Zm-1.467.445-.084.059-.096.072-.092.078-.09.082-.084.086-.082.09-.076.094-.072.098-.066.102-.063.104-.057.107-.053.111-.045.113-.041.117-.035.119-.027.123-.021.123-.014.127-.008.129v.129l.008.131.014.129.018.104.021.1.027.098.031.096.035.096.039.092.045.09.047.088.051.086.057.084.059.08.063.076.066.074.068.072.072.068.076.064.08.061.082.059.084.053.088.051.092.045.066.027.381-.887-.043-.018-.045-.023-.045-.025-.045-.027-.043-.029-.043-.033-.041-.035-.039-.037-.039-.039-.037-.043-.033-.043-.033-.045-.031-.045-.029-.049-.027-.049-.023-.051-.021-.051-.02-.053-.018-.053-.016-.055-.012-.055-.008-.053-.01-.078-.004-.074v-.074l.004-.074.008-.072.014-.07.016-.07.02-.07.023-.068.027-.066.031-.066.035-.064.037-.063.041-.063.045-.061.047-.057.051-.057.053-.055.055-.051.059-.049.061-.047.066-.045zm1.422 1.281-.07.004-.072.01-.07.014-.072.021-.068.025-.068.033-.076.043-.076.055-.066.066-.055.066-.047.068-.039.07-.033.076-.029.08-.021.088-.012.1.002.115.027.129.064.139.107.127.139.092.146.049.098.01.102-.959h.006l.074.025.082.055.066.078.037.08.014.064.002.043-.004.025-.002.014-.002.004v.002h-.002l-.002.004-.006.008-.02.018-.025.02-.008.004h-.002-.002-.002-.01l.012.002.008.002.012.006.018.01.021.014.021.018.021.021.02.023.02.025.014.025.012.023.008.023.006.025.006.027.004.027.002.025v.025l-.002.027-.002.025-.006.025-.006.027-.008.025-.01.027-.012.025-.014.027-.014.027-.018.025-.018.027-.021.025-.021.025-.023.023-.023.023-.027.023-.027.021-.027.021-.029.02-.031.018-.031.018-.031.016-.031.014-.031.012-.033.012-.031.008-.031.008-.055.008-.053.006-.051.002h-.061l-.014.965h.09l.107-.004.109-.012.109-.018.078-.018.078-.021.074-.025.074-.027.072-.031.072-.035.068-.037.066-.039.066-.045.063-.045.061-.049.059-.053.057-.055.055-.057.051-.061.049-.063.047-.064.043-.066.039-.07.035-.072.033-.076.027-.076.025-.08.02-.08.016-.084.01-.084.004-.086V4.73L7.246 4.643 7.234 4.555 7.217 4.467 7.191 4.375 7.154 4.27 7.105 4.164 7.047 4.066 6.98 3.973 6.906 3.885 6.824 3.805 6.734 3.729 6.635 3.662 6.527 3.604 6.41 3.557l-.125-.035-.127-.016zm4.574.156-.938.225.014.059.02.092.018.092.014.092.014.094.01.094.008.096.006.094.004.107.002.107-.002.105-.006.105-.008.105-.01.104-.014.104-.016.102-.018.102-.021.102-.023.1-.025.1-.029.098-.031.098-.033.096-.035.096-.039.094-.041.094-.043.092-.045.092-.047.09-.049.088-.053.088-.053.086-.057.084-.059.084-.025.035.779.57.033-.047.07-.102.068-.104.066-.107.064-.107.061-.109.059-.109.057-.113.053-.113.049-.115.049-.117.045-.119.041-.119.039-.121.035-.121.031-.123.029-.125.027-.125.023-.127.02-.129.016-.127.014-.131.008-.129.008-.133.002-.131-.002-.133-.004-.133-.008-.121-.01-.117-.014-.119-.016-.117-.02-.117-.021-.115-.025-.115zM.965 4.398 0 4.447l.008.137.01.141.016.141.018.141.021.139.023.139.027.137.031.135.035.135.037.133.041.133.045.131.047.129.049.129.053.125.057.127.059.123.063.121.064.121.066.119.07.115.072.115.074.113.078.113.08.109.027.035L1.938 7.096 1.916 7.066 1.85 6.975 1.785 6.883 1.723 6.787 1.662 6.691 1.604 6.594 1.547 6.496 1.494 6.395 1.443 6.293 1.395 6.191 1.348 6.086 1.303 5.982 1.262 5.875 1.223 5.768 1.186 5.658 1.152 5.549 1.121 5.439 1.094 5.326 1.066 5.215 1.043 5.102 1.023 4.986 1.006 4.871.992 4.756.979 4.641.971 4.523Zm8.023.033-.959.111.006.047.008.123V4.834L8.039 4.953 8.025 5.07 8.008 5.188 7.982 5.301 7.953 5.414 7.916 5.523 7.875 5.633 7.828 5.738 7.775 5.842 7.717 5.943 7.654 6.043 7.586 6.137 7.514 6.23 7.438 6.318 7.355 6.404 7.27 6.486 7.18 6.564 7.088 6.639 6.99 6.709 6.891 6.773 6.787 6.834 6.682 6.891 6.572 6.941 6.461 6.988 6.377 7.018 6.703 7.926 6.809 7.889 6.963 7.824 7.111 7.754 7.258 7.678 7.4 7.594 7.537 7.504 7.67 7.408 7.799 7.307 7.922 7.199 8.039 7.086 8.152 6.967 8.258 6.844 8.359 6.715 8.455 6.582 8.543 6.443 8.625 6.301 8.699 6.154 8.766 6.004 8.826 5.848 8.877 5.689 8.922 5.527 8.957 5.363 8.982 5.195 9 5.025 9.01 4.854 9.008 4.678 8.996 4.504ZM3.189 5.785 2.377 6.307 2.453 6.424 2.561 6.576 2.674 6.721 2.795 6.861 2.922 6.996 3.055 7.125l.139.121.145.115.15.109.154.102.16.094.166.086.168.078.176.068.178.061.182.051.186.043.189.031.191.023.193.012.197.002L5.826 8.111 5.996 8.094 6.146 8.07 6.002 7.117 5.875 7.135 5.754 7.148 5.609 7.154H5.465L5.322 7.145 5.184 7.129 5.045 7.105 4.91 7.074 4.777 7.037 4.646 6.992 4.518 6.941 4.393 6.885 4.27 6.82 4.15 6.75 4.033 6.676 3.922 6.594 3.813 6.508 3.709 6.416 3.607 6.318 3.512 6.217 3.42 6.109 3.334 6 3.254 5.885ZM2.219 7.43 1.512 8.088l.07.074.094.098.096.096.1.092.102.09.102.088.105.086.107.082.109.08.111.078.113.074.113.072.117.07.119.066.119.064.123.061.123.059.125.055.127.053.127.049.129.045.133.043.131.039.135.035.135.033.135.029.139.025.139.021.139.02.141.014.141.012h.016l.051-.963h-.004L5.156 8.918 5.041 8.906 4.928 8.891 4.814 8.873 4.701 8.852 4.59 8.828 4.48 8.801 4.371 8.771 4.262 8.74 4.154 8.705 4.047 8.668 3.943 8.627 3.838 8.584 3.734 8.539 3.633 8.492 3.533 8.441 3.434 8.389 3.336 8.334 3.24 8.275 3.145 8.215 3.051 8.154 2.959 8.09 2.869 8.023 2.779 7.953 2.691 7.883 2.605 7.811 2.521 7.734 2.439 7.658 2.359 7.578 2.281 7.498Zm6.549.061-.018.021-.07.074-.07.072-.072.072-.076.068-.076.068-.076.066-.08.064-.082.063-.082.061-.084.061-.084.057-.088.055-.088.053-.09.051-.09.049-.092.047-.094.045-.094.043-.094.039-.098.039-.096.035-.1.033-.098.031-.102.029-.1.025-.102.023-.104.021-.104.02-.104.016-.104.014-.105.012-.105.008-.107.006-.023.002.027.965.037-.002.131-.008.131-.01.129-.014.129-.018.127-.02.127-.023.127-.025.123-.029.125-.033L7.055 9.682 7.176 9.644 7.295 9.603 7.414 9.559 7.531 9.514 7.648 9.463 7.764 9.412 7.877 9.357 7.988 9.301 8.1 9.24l.109-.063.107-.064.105-.066.104-.07.104-.07.1-.074.1-.076.096-.08.096-.08.094-.084.09-.084.09-.088.086-.09.086-.09.025-.029z"
-          />
-        </svg>
-        Description
-      </h3>
-      <div class="p">
-        <p>
-          Ce type de céphalopode avaient une coquille qui est allongée et
-          enroulé autour d’un axe.
-        </p>
-        <p>
-          Peu d’éléments sont connus de l’anatomie interne des ammonites, car
-          les parties molles de l’animal se détachent de la coquille au moment
-          de la mort et juste la coquille est fossilisée.
-        </p>
-        <p>La coquille est divisée en deux parties:</p>
+    <div class="conteneur-image">
+      <figure>
+        <img style="border-radius: 999px" src="ammonites.webp" alt="Fossils d'ammonites" />
+        <figcaption>
+          Fossils d'ammonites. Source:
+          <a href="https://unsplash.com/es/@gabrielle_ellecreative?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank">Gabi
+            Scott</a> en <a
+            href="https://unsplash.com/es/fotos/textil-floral-marron-y-negro-c9y23cBO2UM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank">Unsplash</a>
+        </figcaption>
+      </figure>
+    </div>
 
-        <ol>
-          <li>
-            Le phragmocône: constitue la partie intérieure de la spirale,
-            divisée en loges par séparées par des lignes de sutures
-            caractéristiques de chaque espèce. Elle était remplie par un mélange
-            gazeux.
-          </li>
-          <li>La chambre d’habitation: où se situe le corps mou de l’animal</li>
-        </ol>
-        <p>
-          La communication entre loges était grâce à un siphon ventral. Les
-          ammonites vivaient dans la dernière chambre.
-        </p>
-        <p>
-          Les différents types d’ammonites sont différenciés grâce à leur
-          morphologie, taille et ornementation. Entre les différentes espèces on
-          peut retrouver des coquilles lisses et d’autres ornementées.
-        </p>
-        <p>
-          La taille varie grandement de 20mm (Nannocardioceras) jusqu’à 1.95m de
-          diamètre (Parapuzosia seppenradensis).
-        </p>
-        <p>
-          Un dimorphisme sexuel peut expliquer les différences de taille et de
-          forme dans une même espèce, les femelles étant plus grandes pour
-          permettre la reproduction des œufs.
-        </p>
-      </div>
+    <p>
+      Les ammonites sont des mollusques céphalopodes éteints ayant existé
+      durant le Dévonien au Crétacé il y a environ 400 à 65 millions
+      d’années.
+    </p>
+    <p>
+      Le nom ammonite provient de la forme spirale de leurs coquilles qui
+      évoque les cornes de bélier du dieu Égyptien Amon.
+    </p>
 
-      <h3>Distribution et mode de vie</h3>
-      <div class="p">
-        <p>
-          Les ammonites ont une distribution mondiale dans les océans. Elles se
-          déplaçaient la tête en arrière, grâce aux différentes loges de la
-          coquille. Pour avancer elles aspiraient de l’eau pour l’expirer avec
-          force ce technique étant peu rapide les rendaient vulnérable aux
-          prédateurs.
-        </p>
-        <p>
-          Due à la mauvaise préservation des parties molles on a peu de donnés
-          pour reconstituer le mode de vie et reproduction des ammonites.
-        </p>
-      </div>
+    <h3>
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 10" width="24">
+        <path fill="#c89e60ff"
+          d="M6.115 0 5.994.002 5.869.006 5.658.023 5.445.053 5.234.09 5.027.139 4.824.197 4.625.264 4.43.342 4.24.426 4.055.521 3.873.623 3.697.734 3.529.854l-.164.125-.158.133-.15.141-.031.031.689.676.016-.016.117-.109.123-.104.129-.1.133-.092.137-.088.143-.08.145-.074.148-.066.152-.061.156-.053.158-.045.16-.037.162-.029.166-.021.17-.014.092-.004.096-.002.096.002.094.002.094.008.092.008.092.012.092.014.092.016.059.012L7.018.092 6.945.076 6.83.057 6.713.039 6.596.025 6.477.014 6.357.006 6.236.002Zm1.428.232-.313.914.064.021.086.031.084.035.084.035.082.037.082.041.08.041.08.045.078.045.074.047.154.102.145.109.141.115.137.121.129.129.125.135.117.141L9.084 2.521 9.188 2.674 9.285 2.83 9.375 2.99 9.457 3.154 9.533 3.324 9.596 3.486 10.494 3.137 10.424 2.955 10.33 2.744 10.229 2.537 10.115 2.338 9.994 2.143 9.865 1.955 9.727 1.773 9.58 1.6 9.426 1.432 9.264 1.271 9.094 1.119 8.918.975 8.734.84 8.549.713 8.449.652 8.35.594 8.25.539 8.148.486 8.045.436 7.941.387 7.836.342 7.729.299 7.619.26ZM2.674 1.678 2.645 1.715 2.523 1.881 2.408 2.053 2.303 2.23 2.205 2.414 2.117 2.604 2.039 2.797 1.969 2.994 1.91 3.197 1.863 3.4 1.842 3.508 1.824 3.613 1.809 3.719 1.797 3.826l-.01.107-.006.109-.002.107-.002.109.004.111.006.113.016.189.027.191.035.188.045.184.055.182.061.178.07.176.023.049L2.996 5.418 2.982 5.389 2.93 5.258 2.883 5.123 2.844 4.986 2.809 4.848 2.783 4.707 2.762 4.564 2.75 4.416 2.744 4.336 2.742 4.252 2.744 4.168 2.746 4.086 2.75 4.002 2.758 3.922 2.768 3.84 2.777 3.76 2.791 3.68 2.807 3.604 2.844 3.443 2.889 3.289 2.941 3.139 3.002 2.99 3.07 2.846 3.145 2.703 3.227 2.566 3.314 2.434 3.408 2.305 3.424 2.285ZM6.125 1.777l-.152.004-.154.012-.123.018-.123.023-.121.029-.119.033-.115.041-.033.012.355.898.012-.006.072-.023.074-.021.076-.02.076-.014.076-.01.1-.01.098-.002.098.002.096.01.094.012.094.02.092.023.09.027.088.033.088.037.084.041.084.047.08.051.078.053.076.059.074.063.07.066.068.068.064.072.063.076.059.078.055.082.051.084.047.086.043.09.039.09.033.094.02.059L8.869 3.869 8.842 3.789 8.791 3.652 8.734 3.521 8.672 3.393 8.604 3.266 8.529 3.145 8.451 3.025 8.365 2.91 8.275 2.801 8.182 2.693 8.082 2.594 7.979 2.496 7.869 2.404 7.756 2.318 7.639 2.236 7.518 2.162 7.393 2.092 7.264 2.029 7.131 1.973 6.996 1.922 6.857 1.879 6.715 1.844 6.57 1.814 6.424 1.793 6.275 1.781Zm-1.467.445-.084.059-.096.072-.092.078-.09.082-.084.086-.082.09-.076.094-.072.098-.066.102-.063.104-.057.107-.053.111-.045.113-.041.117-.035.119-.027.123-.021.123-.014.127-.008.129v.129l.008.131.014.129.018.104.021.1.027.098.031.096.035.096.039.092.045.09.047.088.051.086.057.084.059.08.063.076.066.074.068.072.072.068.076.064.08.061.082.059.084.053.088.051.092.045.066.027.381-.887-.043-.018-.045-.023-.045-.025-.045-.027-.043-.029-.043-.033-.041-.035-.039-.037-.039-.039-.037-.043-.033-.043-.033-.045-.031-.045-.029-.049-.027-.049-.023-.051-.021-.051-.02-.053-.018-.053-.016-.055-.012-.055-.008-.053-.01-.078-.004-.074v-.074l.004-.074.008-.072.014-.07.016-.07.02-.07.023-.068.027-.066.031-.066.035-.064.037-.063.041-.063.045-.061.047-.057.051-.057.053-.055.055-.051.059-.049.061-.047.066-.045zm1.422 1.281-.07.004-.072.01-.07.014-.072.021-.068.025-.068.033-.076.043-.076.055-.066.066-.055.066-.047.068-.039.07-.033.076-.029.08-.021.088-.012.1.002.115.027.129.064.139.107.127.139.092.146.049.098.01.102-.959h.006l.074.025.082.055.066.078.037.08.014.064.002.043-.004.025-.002.014-.002.004v.002h-.002l-.002.004-.006.008-.02.018-.025.02-.008.004h-.002-.002-.002-.01l.012.002.008.002.012.006.018.01.021.014.021.018.021.021.02.023.02.025.014.025.012.023.008.023.006.025.006.027.004.027.002.025v.025l-.002.027-.002.025-.006.025-.006.027-.008.025-.01.027-.012.025-.014.027-.014.027-.018.025-.018.027-.021.025-.021.025-.023.023-.023.023-.027.023-.027.021-.027.021-.029.02-.031.018-.031.018-.031.016-.031.014-.031.012-.033.012-.031.008-.031.008-.055.008-.053.006-.051.002h-.061l-.014.965h.09l.107-.004.109-.012.109-.018.078-.018.078-.021.074-.025.074-.027.072-.031.072-.035.068-.037.066-.039.066-.045.063-.045.061-.049.059-.053.057-.055.055-.057.051-.061.049-.063.047-.064.043-.066.039-.07.035-.072.033-.076.027-.076.025-.08.02-.08.016-.084.01-.084.004-.086V4.73L7.246 4.643 7.234 4.555 7.217 4.467 7.191 4.375 7.154 4.27 7.105 4.164 7.047 4.066 6.98 3.973 6.906 3.885 6.824 3.805 6.734 3.729 6.635 3.662 6.527 3.604 6.41 3.557l-.125-.035-.127-.016zm4.574.156-.938.225.014.059.02.092.018.092.014.092.014.094.01.094.008.096.006.094.004.107.002.107-.002.105-.006.105-.008.105-.01.104-.014.104-.016.102-.018.102-.021.102-.023.1-.025.1-.029.098-.031.098-.033.096-.035.096-.039.094-.041.094-.043.092-.045.092-.047.09-.049.088-.053.088-.053.086-.057.084-.059.084-.025.035.779.57.033-.047.07-.102.068-.104.066-.107.064-.107.061-.109.059-.109.057-.113.053-.113.049-.115.049-.117.045-.119.041-.119.039-.121.035-.121.031-.123.029-.125.027-.125.023-.127.02-.129.016-.127.014-.131.008-.129.008-.133.002-.131-.002-.133-.004-.133-.008-.121-.01-.117-.014-.119-.016-.117-.02-.117-.021-.115-.025-.115zM.965 4.398 0 4.447l.008.137.01.141.016.141.018.141.021.139.023.139.027.137.031.135.035.135.037.133.041.133.045.131.047.129.049.129.053.125.057.127.059.123.063.121.064.121.066.119.07.115.072.115.074.113.078.113.08.109.027.035L1.938 7.096 1.916 7.066 1.85 6.975 1.785 6.883 1.723 6.787 1.662 6.691 1.604 6.594 1.547 6.496 1.494 6.395 1.443 6.293 1.395 6.191 1.348 6.086 1.303 5.982 1.262 5.875 1.223 5.768 1.186 5.658 1.152 5.549 1.121 5.439 1.094 5.326 1.066 5.215 1.043 5.102 1.023 4.986 1.006 4.871.992 4.756.979 4.641.971 4.523Zm8.023.033-.959.111.006.047.008.123V4.834L8.039 4.953 8.025 5.07 8.008 5.188 7.982 5.301 7.953 5.414 7.916 5.523 7.875 5.633 7.828 5.738 7.775 5.842 7.717 5.943 7.654 6.043 7.586 6.137 7.514 6.23 7.438 6.318 7.355 6.404 7.27 6.486 7.18 6.564 7.088 6.639 6.99 6.709 6.891 6.773 6.787 6.834 6.682 6.891 6.572 6.941 6.461 6.988 6.377 7.018 6.703 7.926 6.809 7.889 6.963 7.824 7.111 7.754 7.258 7.678 7.4 7.594 7.537 7.504 7.67 7.408 7.799 7.307 7.922 7.199 8.039 7.086 8.152 6.967 8.258 6.844 8.359 6.715 8.455 6.582 8.543 6.443 8.625 6.301 8.699 6.154 8.766 6.004 8.826 5.848 8.877 5.689 8.922 5.527 8.957 5.363 8.982 5.195 9 5.025 9.01 4.854 9.008 4.678 8.996 4.504ZM3.189 5.785 2.377 6.307 2.453 6.424 2.561 6.576 2.674 6.721 2.795 6.861 2.922 6.996 3.055 7.125l.139.121.145.115.15.109.154.102.16.094.166.086.168.078.176.068.178.061.182.051.186.043.189.031.191.023.193.012.197.002L5.826 8.111 5.996 8.094 6.146 8.07 6.002 7.117 5.875 7.135 5.754 7.148 5.609 7.154H5.465L5.322 7.145 5.184 7.129 5.045 7.105 4.91 7.074 4.777 7.037 4.646 6.992 4.518 6.941 4.393 6.885 4.27 6.82 4.15 6.75 4.033 6.676 3.922 6.594 3.813 6.508 3.709 6.416 3.607 6.318 3.512 6.217 3.42 6.109 3.334 6 3.254 5.885ZM2.219 7.43 1.512 8.088l.07.074.094.098.096.096.1.092.102.09.102.088.105.086.107.082.109.08.111.078.113.074.113.072.117.07.119.066.119.064.123.061.123.059.125.055.127.053.127.049.129.045.133.043.131.039.135.035.135.033.135.029.139.025.139.021.139.02.141.014.141.012h.016l.051-.963h-.004L5.156 8.918 5.041 8.906 4.928 8.891 4.814 8.873 4.701 8.852 4.59 8.828 4.48 8.801 4.371 8.771 4.262 8.74 4.154 8.705 4.047 8.668 3.943 8.627 3.838 8.584 3.734 8.539 3.633 8.492 3.533 8.441 3.434 8.389 3.336 8.334 3.24 8.275 3.145 8.215 3.051 8.154 2.959 8.09 2.869 8.023 2.779 7.953 2.691 7.883 2.605 7.811 2.521 7.734 2.439 7.658 2.359 7.578 2.281 7.498Zm6.549.061-.018.021-.07.074-.07.072-.072.072-.076.068-.076.068-.076.066-.08.064-.082.063-.082.061-.084.061-.084.057-.088.055-.088.053-.09.051-.09.049-.092.047-.094.045-.094.043-.094.039-.098.039-.096.035-.1.033-.098.031-.102.029-.1.025-.102.023-.104.021-.104.02-.104.016-.104.014-.105.012-.105.008-.107.006-.023.002.027.965.037-.002.131-.008.131-.01.129-.014.129-.018.127-.02.127-.023.127-.025.123-.029.125-.033L7.055 9.682 7.176 9.644 7.295 9.603 7.414 9.559 7.531 9.514 7.648 9.463 7.764 9.412 7.877 9.357 7.988 9.301 8.1 9.24l.109-.063.107-.064.105-.066.104-.07.104-.07.1-.074.1-.076.096-.08.096-.08.094-.084.09-.084.09-.088.086-.09.086-.09.025-.029z" />
+      </svg>
+      Description
+    </h3>
+    <p>
+      Ce type de céphalopode avaient une coquille qui est allongée et
+      enroulé autour d’un axe.
+    </p>
+    <p>
+      Peu d’éléments sont connus de l’anatomie interne des ammonites, car
+      les parties molles de l’animal se détachent de la coquille au moment
+      de la mort et juste la coquille est fossilisée.
+    </p>
+    <p>La coquille est divisée en deux parties:</p>
+    <ol>
+      <li>
+        Le phragmocône: constitue la partie intérieure de la spirale,
+        divisée en loges par séparées par des lignes de sutures
+        caractéristiques de chaque espèce. Elle était remplie par un mélange
+        gazeux.
+      </li>
+      <li>La chambre d’habitation: où se situe le corps mou de l’animal</li>
+    </ol>
+    <p>
+      La communication entre loges était grâce à un siphon ventral. Les
+      ammonites vivaient dans la dernière chambre.
+    </p>
+    <p>
+      Les différents types d’ammonites sont différenciés grâce à leur
+      morphologie, taille et ornementation. Entre les différentes espèces on
+      peut retrouver des coquilles lisses et d’autres ornementées.
+    </p>
+    <p>
+      La taille varie grandement de 20mm (Nannocardioceras) jusqu’à 1.95m de
+      diamètre (Parapuzosia seppenradensis).
+    </p>
+    <p>
+      Un dimorphisme sexuel peut expliquer les différences de taille et de
+      forme dans une même espèce, les femelles étant plus grandes pour
+      permettre la reproduction des œufs.
+    </p>
 
-      <h3>Extinction</h3>
-      <div class="p">
-        <p>
-          Les ammonites se sont éteintes lors de l’extinction de masse du
-          crétacé-paléogène, il y a environ 66 millions d’années. Cette
-          extinction a été le troisième pire évènement d’extinction de masse qui
-          a provoqué la disparition d’environ 76% des espèces, incluant les
-          dinosaures. Plusieurs scientifiques soutiennent que cet évènement
-          d’extinction a été provoqué par l’impact d’un astéroïde qui s’est
-          écrasé dans les eaux de la péninsule du Yucatán provoquant la
-          dispersion de débris dans l’atmosphère qui ont occasionné un
-          refroidissement mondial, d’autres maintient que la cause a été le
-          changement climatique provoqué par une forte activité volcanique.
-        </p>
-      </div>
+    <h3>Mode de vie</h3>
+    <p>
+      Les ammonites ont une distribution mondiale dans les océans. Elles se
+      déplaçaient la tête en arrière, grâce aux différentes loges de la
+      coquille. Pour avancer elles aspiraient de l’eau pour l’expirer avec
+      force ce technique étant peu rapide les rendaient vulnérable aux
+      prédateurs.
+    </p>
+    <p>
+      Due à la mauvaise préservation des parties molles on a peu de donnés
+      pour reconstituer le mode de vie et reproduction des ammonites.
+    </p>
 
-      <h3>Réferences</h3>
-      <ul>
-        <li>
-          <a
-            href="https://gq.mines.gouv.qc.ca/documents/examine/GT201701/GT201701.pdf"
-            >https://gq.mines.gouv.qc.ca/documents/examine/GT201701/GT201701.pdf</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.futura-sciences.com/planete/definitions/paleontologie-ammonite-4150/"
-            >https://www.futura-sciences.com/planete/definitions/paleontologie-ammonite-4150/</a
-          >
-        </li>
-        <li>
-          <a href="https://fr.wikipedia.org/wiki/Ammonoidea"
-            >https://fr.wikipedia.org/wiki/Ammonoidea</a
-          >
-        </li>
-        <li>
-          <a href="http://www.fossile.fr/infos/ammonites.htm"
-            >http://www.fossile.fr/infos/ammonites.htm</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.bgs.ac.uk/discovering-geology/fossils-and-geological-time/ammonites/"
-            >https://www.bgs.ac.uk/discovering-geology/fossils-and-geological-time/ammonites/</a
-          >
-        </li>
-      </ul>
-    </main>
 
+    <h3>Extinction</h3>
+    <p>
+      Les ammonites se sont éteintes lors de l’extinction de masse du
+      crétacé-paléogène, il y a environ 66 millions d’années. Cette
+      extinction a été le troisième pire évènement d’extinction de masse qui
+      a provoqué la disparition d’environ 76% des espèces, incluant les
+      dinosaures. Plusieurs scientifiques soutiennent que cet évènement
+      d’extinction a été provoqué par l’impact d’un astéroïde qui s’est
+      écrasé dans les eaux de la péninsule du Yucatán provoquant la
+      dispersion de débris dans l’atmosphère qui ont occasionné un
+      refroidissement mondial, d’autres maintient que la cause a été le
+      changement climatique provoqué par une forte activité volcanique.
+    </p>
+
+    <h3>Fossils</h3>
+    <p>On peut trouver des fossiles des ammonites sur les continents qui ont des roches de l'ère du paléozoïque, mais
+      on peut troiver des sites remarquables tels que:</p>
+    <ul>
+      <li>Amérique du nord: Les Montagnes Rocheuses du Canada; Dakota du Nord, Dakota du Sud, et les Montagnes rocheuses
+        aux États-Unis.</li>
+      <li>Afrique: Au Maroc, Algérie et la Tunisie.</li>
+      <li>Autralie: Victoria, Nouvelle-Galles du Sud et l'Australie Méridionale.</li>
+      <li>Asie: En Chine, Mongolie, Japon, Inde et Russie.</li>
+      <li>Europe: En France, Allemagne et Angleterre</li>
+    </ul>
+
+    <h3>Réferences</h3>
+    <ul>
+      <li>
+        <a href="https://gq.mines.gouv.qc.ca/documents/examine/GT201701/GT201701.pdf"
+          target="_blank">https://gq.mines.gouv.qc.ca/documents/examine/GT201701/GT201701.pdf</a>
+      </li>
+      <li>
+        <a href="https://www.futura-sciences.com/planete/definitions/paleontologie-ammonite-4150/"
+          target="_blank">https://www.futura-sciences.com/planete/definitions/paleontologie-ammonite-4150/</a>
+      </li>
+      <li>
+        <a href="https://fr.wikipedia.org/wiki/Ammonoidea" target="_blank">https://fr.wikipedia.org/wiki/Ammonoidea</a>
+      </li>
+      <li>
+        <a href="http://www.fossile.fr/infos/ammonites.htm"
+          target="_blank">http://www.fossile.fr/infos/ammonites.htm</a>
+      </li>
+      <li>
+        <a href="https://www.bgs.ac.uk/discovering-geology/fossils-and-geological-time/ammonites/"
+          target="_blank">https://www.bgs.ac.uk/discovering-geology/fossils-and-geological-time/ammonites/</a>
+      </li>
+    </ul>
+    <!--Un signet en bas pour se déplacer-->
     <div class="signet-navigation">
       <a href="#haut" class="btn1">Haut de la page</a>
     </div>
+  </main>
 
-    <div class="cercle">
-      <span>SX</span>
-    </div>
-
-    <!-- Un footer contenant vos noms et prénoms en gras (vos noms et prénoms doivent être les
+  <!-- Un footer contenant vos noms et prénoms en gras (vos noms et prénoms doivent être les
 seuls mots en gras dans le footer) et la date de la dernière de mise à jour de votre site. -->
-    <footer id="fin">
-      <p>
-        <strong>Shoghi Simon</strong> et <strong>Ariana</strong>
-        <span class="unreadable">ACME Corp.</span> &copy; 31 octobre 2025
-      </p>
-    </footer>
-  </body>
+  <footer id="fin">
+    <p>
+      <strong>Shoghi Simon</strong> et <strong>Arianna Mendoza</strong>
+      <span class="unreadable">ACME Corp.</span> &copy; 31 octobre 2025
+    </p>
+  </footer>
+</body>
+
 </html>
