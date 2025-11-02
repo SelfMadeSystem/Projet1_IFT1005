@@ -37,14 +37,14 @@ header {
   vertical-align: middle;
   font-size: 2em;
   height: 65px;
+}
 
-  /* ajouté padding pour centrer*/
-  h1 {
-    color: var(--text);
-    margin-block: 0;
-    vertical-align: center;
-    padding-top: 0.15em;
-  }
+/* ajouté padding pour centrer*/
+header h1 {
+  color: var(--text);
+  margin-block: 0;
+  vertical-align: center;
+  padding-top: 0.15em;
 }
 
 .logo {
@@ -66,71 +66,39 @@ header {
   width: 500px;
   height: 60px;
   font-size: 1rem;
+}
 
-  .container {
-    text-align: center;
-    position: absolute;
-    inset: 0;
-    color: var(--text);
-    padding-top: 1.0em;
-    backdrop-filter: blur(5px);
-    border-radius: 0px 0px 10px 10px;
-    word-spacing: 0.35em;
+.nav .container {
+  text-align: center;
+  position: absolute;
+  inset: 0;
+  color: var(--text);
+  padding-top: 1em;
+  backdrop-filter: blur(5px);
+  border-radius: 0px 0px 10px 10px;
+  word-spacing: 0.35em;
+}
 
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: var(--surface-darker);
-      opacity: 0.5;
-      z-index: -1;
-      border-radius: inherit;
-    }
-  }
+.nav .container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--surface-darker);
+  opacity: 0.5;
+  z-index: -1;
+  border-radius: inherit;
+}
 
-  .btn {
-    /* enlevé flex */
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.1s;
-  }
+.nav .btn {
+  /* enlevé flex */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.1s;
+}
 
-  .btn:hover {
-    background: rgba(146, 20, 20, 0.2);
-  }
-
-  /* total width: 492 */
-  /* width of btn: 98.4 */
-  .btn:nth-child(1):hover~svg .rect {
-    stroke-dashoffset: 0.1;
-    stroke-dasharray: 0 8 90 864 90 69;
-  }
-
-  .btn:nth-child(2):hover~svg .rect {
-    stroke-dashoffset: 0.1;
-    stroke-dasharray: 0 106.4 90 667.2 90 167;
-  }
-
-  .btn:nth-child(3):hover~svg .rect {
-    stroke-dashoffset: 0.1;
-    stroke-dasharray: 0 204.6 90 470.4 90 265.2;
-  }
-
-  .btn:nth-child(4):hover~svg .rect {
-    stroke-dashoffset: 0.1;
-    stroke-dasharray: 0 303 90 273.6 90 364;
-  }
-
-  .btn:nth-child(5):hover~svg .rect {
-    stroke-dashoffset: 0.1;
-    stroke-dasharray: 0 401.4 90 76.8 90 462;
-  }
-
-  .btn:hover~.outline .rect {
-    stroke-dasharray: var(--default);
-    transition: 0.5s !important;
-  }
+.nav .btn:hover {
+  background: rgba(146, 20, 20, 0.2);
 }
 
 main {
@@ -164,7 +132,7 @@ h6 {
 
 /* titre niveau 2 avec une police et couleur de texte différente */
 h2 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: brown;
   font-size: 2em;
   font-weight: bold;
@@ -178,7 +146,7 @@ img {
 }
 
 /* enlevé flex */
-.conteneur-image {  
+.conteneur-image {
   padding-bottom: 1.6em;
   margin-left: auto;
   margin-right: auto;
@@ -200,22 +168,25 @@ img {
   display: inline;
 }
 
-p a,
-figcaption a,
-ul a {
+a {
   color: var(--link);
   text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-  }
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
 
-  &[href^="http"]::after {
-    content: "↗";
-    font-size: 0.8em;
-    vertical-align: super;
-  }
+a[href^="http"]::after {
+  content: "↗";
+  font-size: 0.8em;
+  vertical-align: super;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
 }
 
 p {
@@ -235,18 +206,19 @@ ol {
   padding-top: 0.5em;
   list-style-type: decimal;
 
-  ol {
-    list-style-type: lower-alpha;
-    padding-bottom: 0.75em;
+}
 
-    ol {
-      list-style-type: lower-roman;
-    }
-  }
+ol ol {
+  list-style-type: lower-alpha;
+  padding-bottom: 0.75em;
+}
 
-  li::marker {
-    font-weight: bold;
-  }
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+li::marker {
+  font-weight: bold;
 }
 
 /* petit logo réalisé avec css, sans image */
