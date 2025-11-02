@@ -23,6 +23,9 @@ C'est juste un CSS reset car je n'aime pas les styles de bases.
 body {
   min-height: 100vh;
   text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 header {
@@ -35,21 +38,13 @@ header {
   font-size: 2em;
   height: 65px;
 
-  @media (min-width: 1080px) {
-    margin: 0 120px;
-  }
-
-  /* enlevé flex et ajouté padding pour centrer*/
+  /* ajouté padding pour centrer*/
   h1 {
     color: var(--text);
     margin-block: 0;
     vertical-align: center;
     padding-top: 0.15em;
   }
-}
-
-div {
-  min-height: 65px;
 }
 
 .logo {
@@ -62,180 +57,25 @@ div {
   float: left;
 }
 
-h1,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  padding-top: 2em;
-  padding-bottom: 0.5em;
-}
-
-h2 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: brown;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-p {
-  padding-top: 0.4em;
-  padding-bottom: 0.4em;
-
-}
-
-main {
-  padding: 6em;
-  color: var(--text);
-  gap: 1em;
-  max-width: auto;
-  margin: auto;
-}
-
-p a,
-figcaption a,
-ul a {
-  color: var(--link);
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-  }
-
-  &[href^="http"]::after {
-    content: "↗";
-    font-size: 0.8em;
-    vertical-align: super;
-  }
-}
-
-ul {
-  padding-left: 1.5em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  list-style: disc;
-}
-
-ol {
-  padding-left: 1.5em;
-  padding-top: 0.5em;
-  list-style-type: decimal;
-
-  ol {
-    list-style-type: lower-alpha;
-    padding-bottom: 0.75em;
-
-    ol {
-      list-style-type: lower-roman;
-    }
-  }
-
-  li::marker {
-    font-weight: bold;
-  }
-}
-
-img {
-  border-style: none;
-  height: 480px;
-  width: 640px;
-  padding: 0px;
-}
-
-footer {
-  background: var(--text);
-  color: var(--surface);
-  padding: 0.5em;
-  text-align: center;
-  margin-top: auto;
-}
-
-.h2 {
-  text-align: center;
-}
-
-/* enlevé flex */
-.conteneur-image {
-  align-items: center;
-  padding-bottom: 1.2em;
-  margin-left: 250px;
-
-}
-
-.bg-fanciness {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-
-.unreadable {
-  font-family: "Redacted Script", cursive;
-}
-
-.icon {
-  display: inline;
-}
-
-/* Source: moi @ https://uiverse.io/SelfMadeSystem/ancient-donkey-33 */
 .nav {
-  display: block;
   position: sticky;
   top: 0;
   right: 0;
-  margin-left: auto;
-
-  @media (min-width: 1080px) {
-    right: 122.5px;
-  }
+  margin: auto;
 
   width: 500px;
   height: 60px;
   font-size: 1rem;
 
-  @media (max-width: 850px) {
-    position: sticky;
-  }
-
-  /* Path length: 1120, half 560 */
-  --default: 0 460 80 480 80 480;
-
-  .outline {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-  }
-
-  .rect {
-    stroke-dashoffset: 0.1;
-    stroke-dasharray: var(--default);
-    stroke-linecap: round;
-    transition: 0.5s;
-    stroke: var(--contrast);
-    transform-origin: center;
-    transform: scaleY(-1);
-  }
-
-  .container:hover .outline .rect {
-    transition: 999999s;
-    /* Must specify these values here as something *different* just so that the transition works properly */
-    stroke-dashoffset: 1;
-    stroke-dasharray: 0.1;
-  }
-
   .container {
+    text-align: center;
     position: absolute;
     inset: 0;
     color: var(--text);
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    padding: 0.25em;
+    padding-top: 1.0em;
     backdrop-filter: blur(5px);
     border-radius: 0px 0px 10px 10px;
+    word-spacing: 0.35em;
 
     &::before {
       content: "";
@@ -249,12 +89,11 @@ footer {
   }
 
   .btn {
-    /* enlevé flex et ajouté padding pour centrer verticalement*/
+    /* enlevé flex */
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: 0.1s;
-    padding-top: 0.8em;
   }
 
   .btn:hover {
@@ -294,6 +133,13 @@ footer {
   }
 }
 
+main {
+  padding: 6em;
+  color: var(--text);
+  gap: 1em;
+  margin: auto;
+}
+
 .btn1 {
   background-color: #ebd9cd;
   color: #000;
@@ -305,7 +151,105 @@ footer {
   cursor: pointer;
 }
 
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+}
 
+/* titre niveau 2 avec une police et couleur de texte différente */
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: brown;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+img {
+  border-style: none;
+  height: 480px;
+  width: 480px;
+  padding: 0px;
+}
+
+/* enlevé flex */
+.conteneur-image {  
+  padding-bottom: 1.6em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.float {
+  float: right;
+  margin-left: 50px;
+}
+
+.img-circulaire {
+  border-style: none;
+  height: 480px;
+  width: 480px;
+  margin-bottom: 1.5em;
+}
+
+.icon {
+  display: inline;
+}
+
+p a,
+figcaption a,
+ul a {
+  color: var(--link);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  &[href^="http"]::after {
+    content: "↗";
+    font-size: 0.8em;
+    vertical-align: super;
+  }
+}
+
+p {
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+
+ul {
+  padding-left: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  list-style: disc;
+}
+
+ol {
+  padding-left: 1.5em;
+  padding-top: 0.5em;
+  list-style-type: decimal;
+
+  ol {
+    list-style-type: lower-alpha;
+    padding-bottom: 0.75em;
+
+    ol {
+      list-style-type: lower-roman;
+    }
+  }
+
+  li::marker {
+    font-weight: bold;
+  }
+}
+
+/* petit logo réalisé avec css, sans image */
 .cercle {
   min-height: 0;
   width: 50px;
@@ -321,6 +265,18 @@ footer {
 }
 
 .cercle:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   background: rgba(146, 20, 20, 0.2);
+}
+
+footer {
+  background: var(--text);
+  color: var(--surface);
+  padding: 0.5em;
+  text-align: center;
+  margin-top: auto;
+}
+
+.unreadable {
+  font-family: "Redacted Script", cursive;
 }
